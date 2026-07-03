@@ -1,8 +1,12 @@
-# Ug Unearthed ruleset
+# Og Unearthed ruleset
 
-Drop one or more `.json` files in this folder and they are loaded
-automatically at startup. Files starting with `_` are ignored (like this one
-and `_sample.json`).
+Rules content for **Og: The Shiny Sleep Thing Comes For You** (fan-made
+one-shot), hand-structured for voice lookup: core rules (`rules.json`),
+the clan classes and pregens (`clan.json`), creatures (`creatures.json`),
+and the four scenes (`scenes.json`).
+
+Any `.json` file in this folder is loaded automatically at startup. Files
+starting with `_` are ignored (like this one and `_sample.json`).
 
 Each file is a JSON **list** of entries:
 

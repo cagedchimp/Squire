@@ -1,0 +1,160 @@
+[
+  {
+    "id": "og:class:eloquent",
+    "name": "Eloquent",
+    "category": "Class",
+    "aliases": ["eloquent caveman", "silver tongue"],
+    "guarded": true,
+    "triggers": ["caveman", "cavemen", "class", "clan", "pick", "picked", "plays", "playing", "new", "og"],
+    "body": ["The silver tongue: starts with the most words (1d6+4 instead of 1d6+2) and wins arguments — +1 to Forced Resolution rolls.",
+             "Considers self wildly persuasive. Is not."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:class:strong",
+    "name": "Strong",
+    "category": "Class",
+    "aliases": ["strong caveman"],
+    "guarded": true,
+    "triggers": ["caveman", "cavemen", "class", "clan", "pick", "picked", "plays", "playing", "new", "og"],
+    "body": ["A tower of muscle: Damage 2 — when you club somebody, he stays clubbed. Throws rocks 65 ft.",
+             "Solves most problems by being heavier than them."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:class:learned",
+    "name": "Learned",
+    "category": "Class",
+    "aliases": ["learned caveman", "clan genius"],
+    "guarded": true,
+    "triggers": ["caveman", "cavemen", "class", "clan", "pick", "picked", "plays", "playing", "new", "og"],
+    "body": ["The clan genius, which is a low bar. Picks six abilities instead of three, and is the ONLY class that can Build, make Fire, or Draw (all exclusive).",
+             "Can make fire and wishes to be worshipped for it."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:class:fast",
+    "name": "Fast",
+    "category": "Class",
+    "aliases": ["fast caveman", "fleet of foot"],
+    "guarded": true,
+    "triggers": ["caveman", "cavemen", "class", "clan", "pick", "picked", "plays", "playing", "new", "og"],
+    "body": ["Fleet of foot: succeeds at Run Away (and Tiptoe) on anything but a 1, and goes first on initiative ties.",
+             "First to flee. Survives."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:class:tough",
+    "name": "Tough",
+    "category": "Class",
+    "aliases": ["tough caveman"],
+    "guarded": true,
+    "triggers": ["caveman", "cavemen", "class", "clan", "pick", "picked", "plays", "playing", "new", "og"],
+    "body": ["Made of tougher stuff: the most Ungggh in the clan (1d6+6 at creation). Resistance succeeds on anything but a 1 — shrugs off leech venom, sleep-grogginess, bad ideas."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:class:banging",
+    "name": "Banging",
+    "category": "Class",
+    "aliases": ["banging caveman"],
+    "guarded": true,
+    "triggers": ["caveman", "cavemen", "class", "clan", "pick", "picked", "plays", "playing", "new", "og", "fights"],
+    "body": ["Born with a rock in hand: hits on a 4 instead of 5 — hits more often than anyone.",
+             "Response to every problem is to bang it. There is no problem banging cannot worsen."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:class:grunting",
+    "name": "Grunting",
+    "category": "Class",
+    "aliases": ["grunting caveman", "flap and chant", "grunt and flap"],
+    "body": ["The mysterious one. Once per scene: flap, chant, and roll 2d6.",
+             "**Doubles** = a miracle saves the day (a perfectly-timed pterodactyl drops a turtle on the problem).",
+             "**Double 1s (snake eyes)** = something far worse. Unpredictable salvation, accidental catastrophe."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:pc:grok",
+    "name": "Grok",
+    "category": "Caveman",
+    "subtitle": "Eloquent — the silver tongue",
+    "meta": {"Attack": "5", "Ungggh": "6", "Damage": "1", "Evade": "0", "Words": "YOU · ME · FOOD · GO · BANG · THING (6!)", "Abilities": "Run Away · Forage · Explore · Intimidate"},
+    "body": ["Knows the most words and will not let anyone forget it. Wins Forced Resolutions on a +1. Considers self wildly persuasive; is not.",
+             "Best at: bossing the clan, fast-talking other tribes, claiming credit for the pterodactyl."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:pc:thudd",
+    "name": "Thudd",
+    "category": "Caveman",
+    "subtitle": "Strong — a tower of muscle",
+    "aliases": ["thud"],
+    "meta": {"Attack": "5", "Ungggh": "7", "Damage": "2", "Evade": "0", "Words": "BIG · ROCK · ME", "Abilities": "Run Away · Lift · Throw · Climb"},
+    "body": ["When you club somebody, he stays clubbed. Throws rocks 65 ft. Solves most problems by being heavier than them.",
+             "Best at: gang-felling the Cave Bear, hurling rocks at the saucer, moving the big slab."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:pc:ugma",
+    "name": "Ugma",
+    "category": "Caveman",
+    "subtitle": "Learned — the clan genius (low bar)",
+    "meta": {"Attack": "5", "Ungggh": "6", "Damage": "1", "Evade": "0", "Words": "FIRE · STICK · WATER", "Abilities": "Run Away · Build · Fire · Draw · Cook · Forage · Fish"},
+    "body": ["Can make fire and wishes to be worshipped for it. Build/Fire/Draw are exclusive — only Ugma can do them. Builds the saucer-sabotage gizmo.",
+             "Best at: explaining plans via stick-figures, being smug."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:pc:zee",
+    "name": "Zee",
+    "category": "Caveman",
+    "subtitle": "Fast — fleet of foot",
+    "meta": {"Attack": "5", "Ungggh": "6", "Damage": "1", "Evade": "1", "Words": "GO · SMELLY · HAIRY", "Abilities": "Run Away · Tiptoe · Jump · Hide"},
+    "body": ["First to flee, succeeds at Run Away on anything but a 1, goes first on initiative ties. Survives.",
+             "Best at: scouting the marsh, escaping the leech, luring astronauts toward the tar."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:pc:bonk",
+    "name": "Bonk",
+    "category": "Caveman",
+    "subtitle": "Tough — made of tougher stuff",
+    "meta": {"Attack": "5", "Ungggh": "9", "Damage": "1", "Evade": "0", "Words": "CAVE · SLEEP · BIG", "Abilities": "Run Away · Resistance · Climb · Lift"},
+    "body": ["Most Ungggh in the clan. Resistance succeeds on anything but a 1 — shrugs off leech venom, sleep-grogginess, bad ideas.",
+             "Best at: tanking the saucer's ray, wading the marsh, the Skull Thickness Demonstration."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:pc:krunk",
+    "name": "Krunk",
+    "category": "Caveman",
+    "subtitle": "Banging — born with a rock in hand",
+    "aliases": ["crunk"],
+    "meta": {"Attack": "4", "Ungggh": "6", "Damage": "1", "Evade": "0", "Words": "BANG · STICK · HAIRY", "Abilities": "Run Away · Hunt · Intimidate · Throw"},
+    "body": ["Hits on a 4 — more often than anyone. Response to every problem is to bang it. There is no problem banging cannot worsen.",
+             "Best at: Hunt to weaken the bear, banging the saucer."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:pc:mun",
+    "name": "Mun",
+    "category": "Caveman",
+    "subtitle": "Grunting — the mysterious one",
+    "meta": {"Attack": "5", "Ungggh": "6", "Damage": "1", "Evade": "0", "Words": "SHINY · THING · SMALL", "Abilities": "Run Away · Hide · Forage · Climb + GRUNTING"},
+    "body": ["Once per scene, grunt & flap: roll 2d6. Doubles = a miracle saves the day. Snake eyes = something far worse.",
+             "Best at: the turtle-dropping pterodactyl, inexplicable salvation, accidental catastrophe."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:npc:thag",
+    "name": "Thag",
+    "category": "NPC",
+    "subtitle": "The clan's wisest grunting elder",
+    "aliases": ["old thag", "thags necklace", "thag's necklace"],
+    "body": ["The clan's wisest grunting elder and best forager — gone from his bearskin the morning the adventure starts. Round footprints, singed-hair smell.",
+             "He is inside the saucer, half-probed, being shown a diagram of a pyramid he will never, ever understand. Freed, he immediately tries to climb back in — the pyramid diagram was just getting good.",
+             "His necklace turns up in the marsh, snagged on a reed over a tar pit."],
+    "source": "Og Unearthed"
+  }
+]

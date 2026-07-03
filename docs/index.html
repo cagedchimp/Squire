@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TTRPG Ruleset Lookup</title>
+<title>Squire — TTRPG Ruleset Lookup</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <style>
   :root {
     --bg: #14100c;
@@ -28,9 +29,17 @@
     border-bottom: 2px solid var(--border);
     font-family: system-ui, sans-serif; font-size: 13px;
   }
+  #brand { display: flex; align-items: center; gap: 9px; margin-right: 8px; }
+  #brand img { width: 30px; height: 30px; display: block; }
   header h1 {
-    font-family: Georgia, serif; font-size: 18px; margin: 0 8px 0 0;
-    color: var(--accent); letter-spacing: 1px; white-space: nowrap;
+    font-family: Georgia, serif; font-size: 19px; margin: 0;
+    color: var(--accent); letter-spacing: 2.5px; white-space: nowrap;
+    font-variant: small-caps;
+  }
+  header h1 small {
+    display: block; font-size: 9.5px; letter-spacing: 1.8px; color: var(--dim);
+    font-variant: normal; font-family: system-ui, sans-serif;
+    text-transform: uppercase; margin-top: -2px;
   }
   select, button, input[type=text] {
     background: var(--panel2); color: var(--text);
@@ -116,7 +125,10 @@
 </head>
 <body>
 <header>
-  <h1>&#9876; Ruleset Lookup</h1>
+  <div id="brand">
+    <img src="logo.svg" alt="Squire logo">
+    <h1>Squire<small>Ruleset Lookup</small></h1>
+  </div>
   <button id="micBtn" class="primary" title="Listen to the room through your microphone">&#127908; Microphone</button>
   <button id="sysBtn" class="primary" title="Listen to a tab or your system audio (Discord, Zoom) — pick a source and check 'share audio'">&#128421; Tab / system audio</button>
   <select id="model" title="Whisper model (bigger = more accurate, slower). Downloads once, then cached.">

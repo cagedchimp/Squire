@@ -1,0 +1,60 @@
+[
+  {
+    "id": "og:scene:1-empty-belly",
+    "name": "The Empty Belly, The Empty Bed",
+    "category": "Scene",
+    "subtitle": "Scene 1 — Home Cave",
+    "aliases": ["empty belly", "empty bed", "home cave scene", "scene one"],
+    "body": ["The clan wakes to no food in the cave — and worse, old Thag, the wisest grunting elder, is gone from his bearskin. Round footprints press into the dirt. A faint smell of singed hair hangs in the air.",
+             "Open with chaos, not exposition: a caveman grabs a fistful of nothing where breakfast should be, then finds the cold bearskin. Let them discover it.",
+             "The fork: fresh tracks lead toward the stinky water place. The footprints are too round — no toes. Nobody has the word for \"spaceship.\" Split the seven here: trackers to the marsh (Scene 3), the rest pulled to the honey (Scene 2)."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:scene:2-bee-thing",
+    "name": "The Bee Thing Detour",
+    "category": "Scene",
+    "subtitle": "Scene 2 — Bee Tree",
+    "aliases": ["bee thing", "bee tree", "honey tree", "the honey", "bendy tree",
+                "scene two", "bees"],
+    "body": ["The food they need is a bee's nest dripping honey, halfway up a very bendy tree, swaying in the wind. This is the slapstick warm-up — laughs, not stakes.",
+             "CLIMB to reach the nest — roll a 1 and you Forget How halfway up; narrate the fall. Each round in the nest, roll RUN AWAY or take 1 from stings.",
+             "The bendy tree bows under weight — two cavemen up at once and it's a catapult. Let physics happen.",
+             "A Cave Bear is also harvesting honey and considers the tree his. If it sags, cut straight to a column of smoke over the marsh — the honey was never the point."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:scene:3-stinky-water",
+    "name": "The Stinky Water Place",
+    "category": "Scene",
+    "subtitle": "Scene 3 — the marsh",
+    "aliases": ["stinky water", "the marsh", "scorched circle", "scene three"],
+    "body": ["The marsh. Tar pits ring it — instant death, only sprung when players have clear chances to avoid. Reeds. A Giant Leech in the shallows.",
+             "Here they find Thag's necklace (snagged on a reed over a tar pit — retrieving it is the avoid-the-hazard beat) and a patch of ground scorched in a perfect circle. The circle still hums faintly; anyone who licks it (someone will) tastes lightning.",
+             "A terrified Lizard Person watches the sky, delivers the reveal vaguely, then hisses and flees. The burnt circle points the way to Scene 4."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:scene:4-shiny-sleep-things",
+    "name": "The Saucer Finale",
+    "category": "Scene",
+    "subtitle": "Scene 4 — The Shiny Sleep Things descend",
+    "aliases": ["the saucer", "saucer", "flying saucer", "scene four", "the finale",
+                "get probed", "probed", "saucer descends"],
+    "body": ["A saucer descends. Out step 4–5 Ancient Astronauts with sleep-rays. Thag is inside, half-probed, being shown a diagram of a pyramid he will never understand.",
+             "They aren't hostile — every cooperative grunt fires a teaching hologram; every grab for a rock earns a sleep-ray. Cooperate/mime → they gift a \"primitive battery\" (does nothing useful, counts as treasure to fight over). Swarm with 7 → rays drop 2–3, the rest mob the saucer. Let chaos win.",
+             "Get probed (lose) → not death: they wake later in a field, hair singed, Thag smug.",
+             "Rescue Thag, drive off the Shiny Sleep Things, and there is your triumph. Or get probed. End on a stop, not a bow — when the saucer leaves (or crashes), the story just stops."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:gm-style",
+    "name": "Describe Everything Vaguely",
+    "category": "Rule",
+    "subtitle": "GM reminder — tape this to your screen",
+    "aliases": ["gm reminder", "describe vaguely", "vague description", "oggy flavor"],
+    "body": ["Where another game says \"a crisp dawn, birdsong, a vine-strewn wall of glowing glyphs\" — you say: \"Cold out. Animal noise loud. Wall of strange square rock. Some glow. Nasty shiny thing.\"",
+             "Throw in the 18 words whenever you can. Make the players work for the mental picture. And the instant the grunting circles — Forced Resolution. Move on. The story stops when the evening does."],
+    "source": "Og Unearthed"
+  }
+]

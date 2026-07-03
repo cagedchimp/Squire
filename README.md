@@ -1,6 +1,9 @@
-# TTRPG Ruleset Lookup
+<p align="center"><img src="docs/logo.svg" width="96" alt="Squire logo"></p>
 
-> **Also available as a static webapp** — see [docs/](docs/README.md):
+<h1 align="center">Squire</h1>
+<p align="center"><i>Voice-triggered TTRPG rules lookup — hear it, see the rule.</i></p>
+
+> **Live webapp**: [cagedchimp.github.io/Squire](https://cagedchimp.github.io/Squire/) — see [docs/](docs/README.md):
 > same lookup, but speech-to-text runs in the browser (transformers.js +
 > WebGPU). Served by GitHub Pages straight from the `docs/` folder.
 

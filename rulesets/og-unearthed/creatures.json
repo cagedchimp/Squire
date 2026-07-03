@@ -1,0 +1,65 @@
+[
+  {
+    "id": "og:creature:ancient-astronaut",
+    "name": "Ancient Astronaut",
+    "category": "Creature",
+    "subtitle": "Caveman name: Shiny Sleep Thing",
+    "aliases": ["shiny sleep thing", "shiny sleep things", "astronaut", "astronauts",
+                "the saucer people"],
+    "meta": {"Ungggh": "6 (Evade 1)", "Key attack": "Ray gun 2/6, or sleep", "Range": "50 ft.", "Appears": "×4–5, with a saucer"},
+    "body": ["They aren't hostile. They want to HELP. They keep trying to teach the cavemen to build a primitive battery. Every cooperative grunt fires up an excited teaching hologram. Every grab for a rock earns a sleep-ray \"for the specimen's own safety.\"",
+             "Sleep ray: drop for 1d6 rounds, wake groggy. Nobody dies easily — that's the point.",
+             "The saucer can be BUILD-sabotaged, THROW-rocked, or simply swarmed by seven angry tribesfolk.",
+             "One keeps trying to shake hands. It does not understand why this provokes clubbing."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:creature:cave-bear",
+    "name": "Cave Bear",
+    "category": "Creature",
+    "subtitle": "Caveman name: Big Hairy Cave Smelly",
+    "aliases": ["big hairy cave smelly", "the bear", "honey bear"],
+    "meta": {"Ungggh": "32", "Attacks": "Bite 4/2 · Paw 5/2"},
+    "body": ["Also harvesting honey at the bee tree, and considers the tree his property. He would prefer you left. Loudly.",
+             "Run away — or gang-fell him with the whole clan for a real food haul. 32 Ungggh is beatable by seven cavemen, and they should earn it.",
+             "He isn't angry yet, just eating noisily. The tension is whether they notice before he does."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:creature:giant-leech",
+    "name": "Giant Leech",
+    "category": "Creature",
+    "subtitle": "Caveman name: Smelly Water Thing",
+    "aliases": ["smelly water thing", "the leech", "leech"],
+    "meta": {"Ungggh": "6", "Attack": "Drain bite 5/1"},
+    "body": ["Lurks in the marsh shallows, always hungry. Latches on silently and drains 1 Ungggh per round until killed or pried off — a player narrates feeling \"tired\" before realizing why.",
+             "Tastes rancid. Anyone who tries to eat it rolls Resistance or is queasy. Bonk shrugs it off and is weirdly proud."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:creature:lizard-person",
+    "name": "Lizard Person",
+    "category": "Creature",
+    "subtitle": "Caveman name: Smelly Cave Thing",
+    "aliases": ["lizard people", "smelly cave thing", "lizard man"],
+    "meta": {"Ungggh": "9 (Armor 1)", "Fights": "As a Banging caveman"},
+    "body": ["Skulks in the marsh, watching the sky with open dread. It hisses and flees rather than fights — the Shiny Sleep Things abduct lizard people as well, and it knows exactly how this goes.",
+             "It's a witness, not a boss. Chasing it into the reeds risks a tar pit. Tastes rancid.",
+             "The reveal, delivered vaguely: \"Shiny thing in sky. Go up. Go down. Cave-friend — not smelly now. Shiny. Sleep. Then nothing.\""],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:creature:random-opponent",
+    "name": "Random Opponent",
+    "category": "Creature",
+    "subtitle": "If solved too fast — roll 1d6",
+    "aliases": ["roll opponent", "solved too fast", "random encounter"],
+    "body": ["1. Carnivorous dinosaur (it followed the smoke)",
+             "2. Herbivore having a very bad day",
+             "3. Second saucer, lost, asking directions",
+             "4. Giant spider in the reeds",
+             "5. Prehistoric mammal, enormous, grumpy",
+             "6. Rival cavemen looting the crash"],
+    "source": "Og Unearthed"
+  }
+]

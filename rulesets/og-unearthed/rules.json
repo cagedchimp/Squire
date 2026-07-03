@@ -1,0 +1,161 @@
+[
+  {
+    "id": "og:rule:rolling",
+    "name": "Rolling The Die",
+    "category": "Rule",
+    "subtitle": "The only die you need",
+    "aliases": ["roll the die", "roll a d6", "how do i roll", "the only die",
+                "succeed on a", "fitting ability", "roll one die"],
+    "meta": {"With a fitting ability": "3–6 succeeds", "Without": "5–6 succeeds", "On a 1": "You Forget How"},
+    "body": ["Roll one six-sided die when you try anything hard. That's it. Higher is better. A 1 is always disaster.",
+             "**3–6** — Success, if you have a fitting ability.",
+             "**5–6** — Success, if you do not.",
+             "**1** — You Forget How. Slapstick. The GM decides how badly."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:forget-how",
+    "name": "You Forget How",
+    "category": "Rule",
+    "subtitle": "Rolling a 1",
+    "aliases": ["forget how", "forgets how", "forgot how", "rolled a one"],
+    "body": ["A 1 is always disaster. You don't just fail — you slapstick. The GM narrates the humiliation.",
+             "Example: roll a 1 while climbing the bee tree and you Forget How halfway up — narrate the fall."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:fight-rolls",
+    "name": "Fight Rolls",
+    "category": "Rule",
+    "subtitle": "Hitting things",
+    "aliases": ["fight roll", "meet your attack", "attack value", "roll to hit og",
+                "evade", "armor lowers"],
+    "meta": {"To hit": "Roll 1d6, meet your Attack value", "Attack value": "5 (4 if Banging)", "Defense": "Target's Evade/Armor subtracts from your roll", "On a hit": "Deal your Damage"},
+    "body": ["Roll 1d6 and meet your Attack value (5, or 4 if you are a Banging caveman). Subtract the target's Evade or Armor from your roll. If you still meet your Attack, you hit and deal your Damage.",
+             "There is no AC, no spell slots, no skill list as long as your arm. There is a caveman, three or four words, a rock, and a die that hates you."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:ungggh",
+    "name": "Ungggh Points",
+    "category": "Rule",
+    "subtitle": "Hit points, caveman style",
+    "aliases": ["ungh points", "ungggh", "unggh", "ugh points", "oomph points",
+                "lost ungggh", "flop over"],
+    "body": ["You take damage as lost Ungggh Points. Grunt vigorously when you lose them.",
+             "Hit 0 → you flop over, dazed. Nobody dies easily — that's the point.",
+             "A night in the home cave heals you fully. Cavemen heal like cartoons."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:rest",
+    "name": "Rest And Healing",
+    "category": "Rule",
+    "aliases": ["home cave", "heal up", "night in the cave", "full ungggh",
+                "sleep it off"],
+    "body": ["One evening in the home cave restores full Ungggh Points. Cavemen heal like cartoons."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:words",
+    "name": "The 18 Words",
+    "category": "Rule",
+    "subtitle": "You speak ONLY these",
+    "aliases": ["eighteen words", "the words", "word list", "circled words",
+                "speak only", "my words", "your words", "three words"],
+    "meta": {"The words": "You · Me · Rock · Water · Fire · Stick · Hairy · Bang · Sleep · Smelly · Small · Big · Cave · Food · Thing · Shiny · Go · Verisimilitude"},
+    "body": ["Your sheet circles the few words you know. No \"out of character\" talk — just your circled words, grunts, gestures, and stick-figure drawings.",
+             "When stuck for words, say them louder. It always helps.",
+             "A clever 10-step plan will not survive contact with your vocabulary. This is correct and good."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:forced-resolution",
+    "name": "Forced Resolution",
+    "category": "Rule",
+    "subtitle": "When the grunting circles the drain",
+    "aliases": ["leader of the moment", "forced res", "call a resolution"],
+    "body": ["Seven people with three words each, all miming at once, is gloriously incomprehensible — for about ninety seconds. After that it is just noise.",
+             "The instant two players have grunted \"Go bang shiny\" at each other three times, step in. Every player with a plan rolls 1d6 (Eloquent adds +1). Highest roll is Leader Of The Moment; everyone else falls in line and does as the leader *seems* to say. Reroll ties.",
+             "Do this early, do this often."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:run-away",
+    "name": "Run Away",
+    "category": "Rule",
+    "subtitle": "Free for everyone",
+    "aliases": ["runs away", "running away", "flee", "we flee"],
+    "body": ["Run Away is free — everyone has it, and fleeing is usually the smartest move you can make.",
+             "A Fast caveman succeeds at Run Away on anything but a 1."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:abilities",
+    "name": "Caveman Abilities",
+    "category": "Rule",
+    "aliases": ["ability applies", "matching ability", "my abilities",
+                "exclusive ability"],
+    "meta": {"Known abilities": "Run Away · Forage · Explore · Intimidate · Lift · Throw · Climb · Build · Fire · Draw · Cook · Fish · Hunt · Tiptoe · Jump · Hide · Resistance"},
+    "body": ["If a fitting ability applies, you succeed on 3–6. Without one, you need 5–6. Everyone gets Run Away free.",
+             "**Build, Fire, and Draw are exclusive** — only a Learned caveman can do them at all.",
+             "Resistance (Tough) succeeds on anything but a 1 — shrugs off leech venom, sleep-grogginess, bad ideas."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:new-caveman",
+    "name": "Making A New Caveman",
+    "category": "Rule",
+    "subtitle": "Or your replacement after you get eaten",
+    "aliases": ["new caveman", "spare caveman", "character creation",
+                "replacement caveman", "got eaten", "make a caveman"],
+    "meta": {"Words": "1d6+2 (Eloquent: 1d6+4)", "Ungggh": "1d6+3 (Tough: 1d6+6)", "Abilities": "3 (Learned: 6) + Run Away free", "Class": "Eloquent · Strong · Learned · Fast · Tough · Banging · Grunting"},
+    "body": ["Pick one class, then roll: 1d6+2 words (Eloquent 1d6+4), 1d6+3 Ungggh Points (Tough 1d6+6), and pick 3 abilities (Learned picks 6). Everyone gets Run Away free.",
+             "Circle your words from the 18. You are a caveman. Not the kind who invents fire and civilization. The other kind. Go get eaten gloriously."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:word-awards",
+    "name": "Word Awards",
+    "category": "Rule",
+    "subtitle": "Session-end reward",
+    "aliases": ["new word", "award a word", "earn a word", "session end word",
+                "learn a word"],
+    "body": ["Award one new word at session end:",
+             "- SLEEP — for anyone who got rayed",
+             "- SHINY — the workhorse choice",
+             "- GO — if the saucer left an impression",
+             "- Resist the urge to hand out \"spaceship\"",
+             "- The drabbest useful word beats the coolest one",
+             "- Whatever names their dumbest moment"],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:technology-sucks",
+    "name": "Technology Sucks",
+    "category": "Rule",
+    "aliases": ["smash it on sight", "smash the gizmo"],
+    "body": ["Reward cleverness when a Learned caveman Builds something — then have a clanmate smash it on sight. Technology Sucks."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:rule:sleep-ray",
+    "name": "Sleep Ray",
+    "category": "Rule",
+    "aliases": ["sleep rays", "sleep-ray", "ray gun", "got rayed", "rayed",
+                "sleep beam"],
+    "meta": {"Range": "50 ft.", "Effect": "Drop for 1d6 rounds, wake groggy"},
+    "body": ["The ray gun sleeps, it doesn't kill. Sleep-rayed cavemen drop for 1d6 rounds, then wake groggy — \"for the specimen's own safety.\"",
+             "A Tough caveman's Resistance shrugs off the grogginess on anything but a 1."],
+    "source": "Og Unearthed"
+  },
+  {
+    "id": "og:hazard:tar-pits",
+    "name": "Tar Pits",
+    "category": "Hazard",
+    "aliases": ["tar pit", "the tar"],
+    "body": ["Instant death. Only spring them when players have had multiple clear chances to avoid them. They ring the Stinky Water Place.",
+             "Luring something INTO the tar, on the other hand, is excellent caveman problem-solving."],
+    "source": "Og Unearthed"
+  }
+]
