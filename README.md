@@ -60,6 +60,15 @@ Extracted from the three core book PDFs (`rulesets/dnd5e-books/` — kept
 - 73 MM monsters missing from the SRD (Beholder, Mind Flayer, Displacer
   Beast, Death Knight, Yeti, the slaadi/yugoloths/modrons, …)
 
+**Og Unearthed** (`rulesets/og-unearthed/`, fan-made one-shot — ships with
+the public site):
+- Core rules: the d6 roll, Fight Rolls, Ungggh Points, the 18 Words,
+  Forced Resolution, Grunting, Sleep Ray, character creation
+- All 7 classes and all 7 clan pregens (Grok, Thudd, Ugma, Zee, Bonk,
+  Krunk, Mun) plus Thag
+- Creatures with caveman-name aliases ("Big Hairy Cave Smelly" finds the
+  Cave Bear) and the four adventure scenes
+
 Every book-extracted monster label is verified against its own stat block
 text; unverifiable blocks are dropped rather than risk showing the wrong
 stats. A few stat blocks (e.g. Kenku) are images in the PDF and can't be
