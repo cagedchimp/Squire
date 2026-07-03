@@ -32,6 +32,7 @@ class Entry:
     meta: dict = field(default_factory=dict)
     body: list[str] = field(default_factory=list)
     source: str = ""
+    ruleset: str = ""  # folder name; used for enable/disable filtering
     # Guarded entries have names that are common English words ("Shield",
     # "Light", "History"). They only match when a trigger word ("cast",
     # "check", ...) is heard nearby, to avoid constant false positives.

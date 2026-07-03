@@ -44,6 +44,9 @@ anywhere.
   files (e.g. the `rulesets/dnd5e-books/*.json` you generate locally, or
   Ug Unearthed later); same entry format as
   `rulesets/ug-unearthed/_README.md`. Stored per-browser in localStorage.
+- **Ruleset chips** (header) — click to enable/disable a ruleset's matches,
+  e.g. turn off D&D during an Og session so overlapping terms ("sleep",
+  "rest", "run away") resolve to the right game. Remembered per browser.
 - **Simulate box** — type what a player might say to test without audio.
 
 ## Updating the data

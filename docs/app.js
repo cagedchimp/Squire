@@ -15,17 +15,60 @@ let mediaStream = null;
 let listening = false;
 
 // ---------------------------------------------------------------- data
+let allEntries = [];
+let rulesetList = []; // {name, count, imported}
+
+function loadActiveMap() {
+  try { return JSON.parse(localStorage.getItem('activeRulesets') || '{}'); }
+  catch { return {}; }
+}
+function isActive(name) {
+  return loadActiveMap()[name] !== false; // default: on
+}
+function setActive(name, on) {
+  const map = loadActiveMap();
+  map[name] = on;
+  localStorage.setItem('activeRulesets', JSON.stringify(map));
+}
+
 async function loadData() {
   const res = await fetch('data/rulesets.json');
   const data = await res.json();
-  let entries = data.entries;
-  // merge imported custom rulesets (e.g. Ug Unearthed) from localStorage
-  const custom = loadCustomRulesets();
-  for (const rs of custom) entries = entries.concat(rs.entries);
+  allEntries = data.entries;
+  rulesetList = data.rulesets.map(r => ({ name: r.name, count: r.entries, imported: false }));
+  // merge imported custom rulesets (e.g. book content) from localStorage
+  for (const rs of loadCustomRulesets()) {
+    for (const e of rs.entries) e.ruleset = rs.name;
+    allEntries = allEntries.concat(rs.entries);
+    rulesetList.push({ name: rs.name, count: rs.entries.length, imported: true });
+  }
+  buildMatcher();
+  renderRulesetChips();
+}
+
+function buildMatcher() {
+  const entries = allEntries.filter(e => isActive(e.ruleset));
   matcher = new RuleMatcher(entries);
-  const names = data.rulesets.map(r => `${r.name} (${r.entries})`)
-    .concat(custom.map(r => `${r.name} (${r.entries.length}, imported)`));
-  $('datasets').textContent = `${entries.length} entries: ${names.join(', ')}`;
+  $('datasets').textContent =
+    `${entries.length} entries active — click a ruleset in the header to toggle it`;
+}
+
+function renderRulesetChips() {
+  const el = $('rulesets');
+  el.innerHTML = '';
+  for (const rs of rulesetList) {
+    const on = isActive(rs.name);
+    const chip = document.createElement('span');
+    chip.className = 'chip' + (on ? ' active' : '');
+    chip.title = (on ? 'Disable ' : 'Enable ') + rs.name + ' matches';
+    chip.textContent = `${on ? '✓ ' : ''}${rs.name} (${rs.count})`;
+    chip.onclick = () => {
+      setActive(rs.name, !isActive(rs.name));
+      buildMatcher();
+      renderRulesetChips();
+    };
+    el.appendChild(chip);
+  }
 }
 
 function loadCustomRulesets() {

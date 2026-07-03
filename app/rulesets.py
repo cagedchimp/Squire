@@ -337,6 +337,8 @@ def load_all() -> tuple[list[Entry], list[dict]]:
         else:
             entries = load_generic(folder)
         if entries:
+            for e in entries:
+                e.ruleset = folder.name
             all_entries.extend(entries)
             summaries.append({"name": folder.name, "entries": len(entries)})
     return all_entries, summaries

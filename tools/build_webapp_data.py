@@ -31,6 +31,8 @@ def main():
             continue
         loaded = load_dnd5e() if folder.name == "dnd5e" else load_generic(folder)
         if loaded:
+            for e in loaded:
+                e.ruleset = folder.name
             entries.extend(loaded)
             summaries.append({"name": folder.name, "entries": len(loaded)})
 
@@ -45,6 +47,7 @@ def main():
             "meta": e.meta,
             "body": e.body,
             "source": e.source,
+            "ruleset": e.ruleset,
             "guarded": e.guarded,
             "triggers": sorted(e.triggers),
         } for e in entries],

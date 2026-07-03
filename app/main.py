@@ -24,9 +24,9 @@ app = FastAPI(title="TTRPG Ruleset Lookup")
 
 class Engine:
     def __init__(self):
-        entries, self.ruleset_summaries = load_all()
-        self.matcher = RuleMatcher(entries)
-        self.entry_count = len(entries)
+        self.all_entries, self.ruleset_summaries = load_all()
+        self.active_rulesets = {s["name"] for s in self.ruleset_summaries}
+        self._rebuild_matcher()
         self.status = "idle"
         self.detail = ""
         self.loop: asyncio.AbstractEventLoop | None = None
@@ -36,6 +36,16 @@ class Engine:
         self.capture = None
         self._stop = threading.Event()
         self._worker: threading.Thread | None = None
+
+    def _rebuild_matcher(self):
+        entries = [e for e in self.all_entries if e.ruleset in self.active_rulesets]
+        self.matcher = RuleMatcher(entries)
+        self.entry_count = len(entries)
+
+    def set_active_rulesets(self, names: list[str]):
+        valid = {s["name"] for s in self.ruleset_summaries}
+        self.active_rulesets = set(names) & valid
+        self._rebuild_matcher()
 
     # ---- websocket plumbing ----
     async def broadcast(self, msg: dict):
@@ -159,9 +169,21 @@ async def status():
         "status": engine.status,
         "detail": engine.detail,
         "entries": engine.entry_count,
-        "rulesets": engine.ruleset_summaries,
+        "rulesets": [{**s, "active": s["name"] in engine.active_rulesets}
+                     for s in engine.ruleset_summaries],
         "model": engine.model_size,
     }
+
+
+class RulesetsRequest(BaseModel):
+    active: list[str]
+
+
+@app.post("/api/rulesets")
+async def set_rulesets(req: RulesetsRequest):
+    engine.set_active_rulesets(req.active)
+    return {"ok": True, "active": sorted(engine.active_rulesets),
+            "entries": engine.entry_count}
 
 
 @app.post("/api/start")
