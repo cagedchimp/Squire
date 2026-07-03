@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Big Rock",
+    "category": "Attack",
+    "subtitle": "Basic action",
+    "aliases": ["throw rock", "throws rock", "rock throw"],
+    "meta": {"Cost": "1 action", "Range": "Thrown"},
+    "body": ["Ug throw big rock. Roll to hit. Rock hurt."]
+  },
+  {
+    "name": "Grunt Points",
+    "category": "Resource",
+    "aliases": ["grunts", "grunt point"],
+    "body": ["Grunt Points fuel Ug's special actions. Ug regains all Grunt Points after a long sleep by the fire."]
+  }
+]

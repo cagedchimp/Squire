@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+faster-whisper>=1.0
+rapidfuzz>=3.6
+numpy>=1.26
+PyAudioWPatch>=0.2.12.6
